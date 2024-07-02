@@ -1,0 +1,173 @@
+{
+  "workflowhistory": {
+    "post": {
+      "/{workflowType}/{modelid}/datatable": [
+        "PermitAll"
+      ]
+    }
+  },
+  "rappitjitgrouprolemapping": {
+    "post": {
+      "/datatable": [
+        "App Admin"
+      ],
+      "/": [
+        "App Admin"
+      ]
+    },
+    "put": {
+      "/": [
+        "App Admin"
+      ]
+    },
+    "delete": {
+      "/{ids}": [
+        "App Admin"
+      ]
+    }
+  },
+  "attachments": {
+    "post": {
+      "/link": [
+        "PermitAll"
+      ],
+      "/upload": [
+        "PermitAll"
+      ]
+    },
+    "get": {
+      "/download/attachment/{attachment_id}": [
+        "PermitAll"
+      ],
+      "/download/inline/{attachment_id}": [
+        "PermitAll"
+      ],
+      "/all/{modelKey}": [
+        "PermitAll"
+      ]
+    },
+    "delete": {
+      "/{ids}}": [
+        "PermitAll"
+      ],
+      "/attachments/{ids}": [
+        "PermitAll"
+      ]
+    }
+  },
+  "workflowconfig": {
+    "get": {
+      "/getconfig/{workflowType}": [
+        "PermitAll"
+      ]
+    }
+  },
+  "changelogs": {
+    "post": {
+      "/datatable/{entityName}/{entityId}/{fieldName}/{fromModifiedDate}": [
+        "PermitAll"
+      ]
+    }
+  },
+  "otp": {
+    "post": {
+      "/validateotp/{otp}": [
+        "PermitAll"
+      ],
+      "/generateandsendotp": [
+        "PermitAll"
+      ],
+      "/forgotpasswordotp": [
+        "PermitAll"
+      ]
+    }
+  },
+  "usernotificationsyncinfo": {
+    "put": {
+      "/updatesynctime": [
+        "PermitAll"
+      ]
+    }
+  },
+  "rappitexposedapiclients": {
+    "post": {
+      "/sql/setup": [
+        "App Admin",
+        "Development Administrator"
+      ],
+      "/sql/datatable": [
+        "App Admin",
+        "Development Administrator"
+      ]
+    },
+    "get": {
+      "/sql/{sid}": [
+        "App Admin",
+        "Development Administrator"
+      ]
+    },
+    "put": {
+      "/sql/": [
+        "App Admin",
+        "Development Administrator"
+      ]
+    }
+  },
+  "deploy": {
+    "post": {
+      "/setup": [
+        "App Admin"
+      ]
+    }
+  },
+  "environmentinfo": {
+    "get": {
+      "/": [
+        "PermitAll"
+      ]
+    }
+  },
+  "applicationusers": {
+    "post": {
+      "/datatable": [
+        "App Admin"
+      ],
+      "/": [
+        "App Admin"
+      ]
+    },
+    "get": {
+      "/roles": [
+        "PermitAll"
+      ],
+      "/user-details": [
+        "PermitAll"
+      ],
+      "/{sid}": [
+        "App Admin"
+      ],
+      "/autosuggest": [
+        "App Admin"
+      ]
+    },
+    "put": {
+      "/": [
+        "App Admin"
+      ]
+    },
+    "delete": {
+      "/{ids}": [
+        "App Admin"
+      ]
+    },
+    "options": {}
+  },
+  "integrations": {},
+  "notifications": {
+    "post": {
+      "/notifications/datatable": [
+        "PermitAll"
+      ]
+    }
+  }
+}

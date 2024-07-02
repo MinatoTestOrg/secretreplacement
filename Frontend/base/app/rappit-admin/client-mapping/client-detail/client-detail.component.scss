@@ -1,0 +1,11 @@
+.required {
+  label:after {
+    content: "*";
+    color: red;
+  }
+}
+
+hr.sa_seperator {
+  margin: 15px auto 5px auto;
+  width: 93%;
+}

@@ -1,0 +1,8 @@
+:host ::ng-deep {
+    .p-datatable > .p-datatable-wrapper {
+        overflow: unset !important;
+    }
+}
+p-celleditor.p-element{
+    text-wrap: wrap;
+}

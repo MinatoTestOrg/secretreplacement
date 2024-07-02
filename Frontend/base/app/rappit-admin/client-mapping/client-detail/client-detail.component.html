@@ -1,0 +1,47 @@
+
+<div class="detail client-mapping-detail">
+
+    <div class="ev-detail-view" id="detail-view-container">
+
+        <div class="flex align-items-center justify-content-center form-container">
+            <form class="ev-form " [formGroup]="ClientMappingFormControls" #detailForm >
+                <div class="row form-body">
+                    <div class=" vg-col-2">
+    <div class="form-col"  id="producer">
+    <div class="field-row">
+        <label for="producer" class="col-form-label producer-label" [textContent]="'FROM_APP'|translate"></label>
+        <input type="text" pInputText class="form-control"  formControlName="producer" readonly="true" [disabled]="true">
+    </div>
+</div>
+
+<div class="form-col"  id="consumer">
+    <div class="field-row"  >
+        <label for="consumer" class="col-form-label consumer-label" [textContent]="'TO_APP'|translate"></label>
+        <input type="text" pInputText class="form-control"  formControlName="consumer"  readonly="true" [disabled]="true">
+    </div>
+</div>
+
+<div class="form-col" id="userContextRequired">
+    <div class="field-row">
+        <label for="userContextRequired" class="col-form-label userContextRequired-label" [textContent]=" 'USER_CONTEXT_REQUIRED'|translate "></label>
+        <input type="text" pInputText class="form-control"  formControlName="userContextRequired" readonly="true" [disabled]="true">
+      </div>
+    </div>  
+    <hr class="sa_seperator">
+    <div class="form-col"  id="saEmail">
+        <div class="field-row"  class="required">
+            <label for="saEmail" class="col-form-label saEmail-label " [textContent]="'SERVICE_ACCOUNT_MAIL'|translate"></label>
+            <input type="text" pInputText class="form-control"  formControlName="saEmail"  placeholder="Enter mail">
+        </div>
+    </div>
+
+</div>
+ </div>
+</form>
+</div>
+<div class="footer">
+    <p-button icon="pi pi-check" class="import-btn" type="submit" (onClick)="updateValues()"
+        label="Save"></p-button>
+</div>
+</div>
+</div>
